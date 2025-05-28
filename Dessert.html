@@ -1,71 +1,126 @@
 <!DOCTYPE html>
-<html lang="en"Z>
-    <head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <title>Available Services</title>      
-  <link rel="stylesheet"href="styles.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1>Dessserts on the menu</h1>
-      <nav>
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="contact.html">Contact</a></li>
-       <li><a href="Dessert.html">Dessert</a></li>
-       <li><a href="Menu.html">Menu</a></li>
-       <li><a href="Gallery.html">Gallery</a></li>
-       <li> <a href="PROMOTIONS.html">Promos</a></li>
-       <li> <a href="Review.html">Review</a></li>
-      </ul>
-      </nav>
-    </header>
-    <a href="index.html" class="floating-home-button" title="Back to Home">🏠</a>
-      <main class="dessert-page">
-        <h1>Sweet Treats & Desserts</h1>
-        <div class="dessert-grid">
-          <div class="dessert-item">
-            <div class="dessert-grid">
-              <div class="dessert-item">
-                <img src="images/chocolate cake.jpeg" alt="Chocolate Fudge Cake">
-                <h3>Chocolate Fudge Cake</h3>
-                <p>P25 • Rich, moist, and indulgent</p>
-              </div>
-              <div class="dessert-item">
-                <img src="images/chesecake slice.jpeg" alt="Cheesecake Slice">
-                <h3> Cheesecake Slice</h3>
-                <p>P28 • Creamy and topped with fresh berries</p>
-              </div>
-              <div class="dessert-item">
-                <img src="images/cookies.jpeg" alt="Gooey Chocolate Chip Cookie">
-                <h3>Chocolate Chip Cookie</h3>
-                <p>P12 • Warm, soft, with melted chips</p>
-              </div>
-              <div class="dessert-item">
-                <img src="images/Mukbang.jpeg" alt= "Macarons">
-                <h3> Macarons</h3>
-                <p>P30 • Box of 6 colorful French delights</p>
-              </div>
-              <div class="dessert-item">
-                <img src="images/icecream.jpeg" alt="Ice Cream Sundae">
-                <h3>Ice Cream Sundae</h3>
-                <p>P22 • Vanilla or Chocolate, with toppings & syrup</p>
-              </div>
-              <div class="dessert-item">
-                <img src="images/cupcakes.jpeg" alt="cupcakes"
-                <p>P13</p>
-                </div>
-                <img src="images/chocolates.jpeg" alt="chocolates"> <P>P22</P>
-                <img src="images/suffle.jpeg" alt="chocolate suffle"> <p>P15</p>
-                <img src="images/milkshakes.jpeg" alt="milkshakes"> <P>P18</P>
-              <img src="images/swiss roll.jpeg" alt="swiss roll"><p>P20</p>
-            </div>
-          </main>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desserts - Patrulla Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #2b2b2b;
+      color: #f5f5dc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #6f4e37;
+    }
+    .navbar a {
+      color: white;
+    }
+    .footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .floating-home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6f4e37;
+      color: white;
+      font-size: 1.5em;
+      padding: 0.6em 0.8em;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+    .dessert-item img {
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Patrulla Café</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="dessert.html">Desserts</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="review.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <footer>
-     <p>&copy;2025 Patrulla sweet treats Café. All rights reserved</p>
-    </footer>
-  </body>
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Sweet Treats & Desserts</h1>
+    <p class="text-center lead">Finish your visit with a bite of something sweet from our handcrafted dessert collection.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/chocolate cake.jpeg" class="card-img-top" alt="Chocolate Fudge Cake">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Fudge Cake</h5>
+            <p class="card-text">P25 • Rich, moist, and indulgent</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/chesecake slice.jpeg" class="card-img-top" alt="Strawberry Cheesecake">
+          <div class="card-body">
+            <h5 class="card-title">Strawberry Cheesecake</h5>
+            <p class="card-text">P28 • Creamy and topped with fresh berries</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/cookies.jpeg" class="card-img-top" alt="Chocolate Chip Cookie">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Chip Cookie</h5>
+            <p class="card-text">P12 • Warm, soft, with melted chips</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/Mukbang.jpeg" class="card-img-top" alt="Assorted Macarons">
+          <div class="card-body">
+            <h5 class="card-title">Assorted Macarons</h5>
+            <p class="card-text">P30 • Box of 6 colorful French delights</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/icecream.jpeg" class="card-img-top" alt="Ice Cream Sundae">
+          <div class="card-body">
+            <h5 class="card-title">Ice Cream Sundae</h5>
+            <p class="card-text">P22 • Vanilla or Chocolate, with toppings & syrup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <a href="index.html" class="floating-home-button" title="Back to Home">🏠</a>
+
+  <footer class="footer">
+    <p>&copy; 2025 Patrulla Café. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

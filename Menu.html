@@ -1,101 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet"href="styles.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Patrulla Café</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #2b2b2b;
+      color: #f5f5dc;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: #6f4e37;
+    }
+    .navbar a {
+      color: white;
+    }
+    .footer {
+      background-color: #6f4e37;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .floating-home-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6f4e37;
+      color: white;
+      font-size: 1.5em;
+      padding: 0.6em 0.8em;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+    .menu-item img {
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-<header>
-    <h1>Welcome to Patrulla treats's offical website!</h1>
-<nav>
-<ul>
-   <li> <a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-  <li> <a href="Contact.html">Contact</a></li>
-   <li> <a href="Dessert.html">Dessert</a></li>
-   <li> <a href="Menu.html">Menu</a></li>
-   <li> <a href="Gallery.html">Gallery</a></li>
-  <li> <a href="PROMOTIONS.html">Promos</a></li>
-  <li> <a href="Review.html">Review</a></li>
-</ul>
-</header>
-<a href="index.html" class="floating-home-button" title="Back to Home">🏠</a>
-<main class="menu-page">
-    <h1>Our Menu</h1>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html">Patrulla Café</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="dessert.html">Desserts</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="review.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section class="menu-section">
-      <h2> Drinks</h2>
-      <ul class="menu-list">
-        <li><strong>Espresso</strong> - P20</li>
-        <li><strong>Latte</strong> - P25</li>
-        <li><strong>Cappuccino</strong> - P25</li>
-        <li><strong>Iced Coffee</strong> - P22</li>
-      </ul>
-    </section>
+  <main class="container py-5">
+    <h1 class="text-center mb-5">Our Signature Menu</h1>
 
-    <section class="menu-section">
-      <h2> Pastries</h2>
-      <ul class="menu-list">
-        <li><strong>Croissant</strong> - P15</li>
-        <li><strong>Muffin</strong> - P12</li>
-        <li><strong>Cheesecake Slice</strong> - P18</li>
-        <li><strong>Brownie</strong> - P14</li>
-      </ul>
-    </section>
-
-    <section class="menu-section">
-      <h2> Light Meals</h2>
-      <ul class="menu-list">
-        <li><strong>Greek Salad</strong> - P28</li>
-        <img src="images/greek salad.jpeg" alt="greek salad">
-        <li><strong>Chicken Wrap</strong> - P35</li>
-      <img src="images/chicken wrap.jpeg" alt="chicken wrap">
-        <main class="menu-page">
-          <h1>Our Signature Menu</h1>
-      
-          <div class="menu-grid">
-            <!-- DRINKS -->
-            <div class="menu-item">
-              <img src="images/latte.jpeg" alt="Latte">
-              <h3>Latte</h3>
-              <p>P25 • Creamy & smooth, served hot or iced</p>
-            </div>
-            <div class="menu-item">
-              <img src="images/cappucino.jpeg" alt="Cappuccino">
-              <h3>Cappuccino</h3>
-              <p>P25 • Rich espresso with foamed milk</p>
-            </div>
-            <div class="menu-item">
-              <img src="images/iced coffe.jpeg" alt="Iced Coffee">
-              <h3>Iced Coffee</h3>
-              <p>P22 • Refreshing and bold, served cold</p>
-            </div>
-      
-            <!-- PASTRIES -->
-            <div class="menu-item">
-              <img src="images/croissant.jpeg" alt="Croissant">
-              <h3>Butter Croissant</h3>
-              <p>P15 • Flaky, buttery, baked daily</p>
-            </div>
-            <div class="menu-item">
-              <img src="images/muffins.jpeg" alt="Chocolate Muffin">
-              <h3>Chocolate Muffin</h3>
-              <p>P12 • Moist and fresh</p>
-            </div>
-            <div class="menu-item">
-              <img src="images/ccokies and creame brownie.jpeg" alt="Cookies and cream Brownie">
-              <h3>Cookies and cream Brownie</h3>
-              <p>P14 • crispy edges</p>
-            </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/latte.jpeg" class="card-img-top" alt="Latte">
+          <div class="card-body">
+            <h5 class="card-title">Latte</h5>
+            <p class="card-text">P25 • Creamy & smooth, served hot or iced</p>
           </div>
-      </ul>
-    </section>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/cappucino.jpeg" class="card-img-top" alt="Cappuccino">
+          <div class="card-body">
+            <h5 class="card-title">Cappuccino</h5>
+            <p class="card-text">P25 • Rich espresso with foamed milk</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/iced coffe.jpeg" class="card-img-top" alt="Iced Coffee">
+          <div class="card-body">
+            <h5 class="card-title">Iced Coffee</h5>
+            <p class="card-text">P22 • Refreshing and bold, served cold</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/croissant.jpeg" class="card-img-top" alt="Croissant">
+          <div class="card-body">
+            <h5 class="card-title">Butter Croissant</h5>
+            <p class="card-text">P15 • Flaky, buttery, baked daily</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/muffins.jpeg" class="card-img-top" alt="Muffin">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate Muffin</h5>
+            <p class="card-text">P12 • Moist and fresh</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-light text-dark">
+          <img src="images/ccokies and creame brownie.jpeg" class="card-img-top" alt="Brownie">
+          <div class="card-body">
+            <h5 class="card-title">Chocolate creamy Oreo Brownie</h5>
+            <p class="card-text">P14 • Oreo center with crispy edges</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2025 Patrulla's sweet treats cafe. All rights reserved.</p>
+
+  <a href="index.html" class="floating-home-button" title="Back to Home">🏠</a>
+
+  <footer class="footer">
+    <p>&copy; 2025 Patrulla Café. All rights reserved.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

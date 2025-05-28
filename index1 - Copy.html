@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery - Patrulla Café</title>
+  <title>Patrulla Café</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -17,11 +17,23 @@
     .navbar a {
       color: white;
     }
+    .hero {
+      background-image: url('images/banner.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+      color: white;
+    }
+    .feature-card {
+      background-color: #fff6ed;
+      color: #333;
+    }
     .footer {
       background-color: #6f4e37;
       color: white;
+      padding: 1em 0;
       text-align: center;
-      padding: 1em;
     }
     .floating-home-button {
       position: fixed;
@@ -36,12 +48,6 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 999;
     }
-    .gallery-img {
-      border-radius: 10px;
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
   </style>
 </head>
 <body>
@@ -50,36 +56,48 @@
       <a class="navbar-brand text-white" href="index.html">Patrulla Café</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="dessert.html">Desserts</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="desserts.html">Desserts</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="review.html">Review</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="promos.html">Promos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container py-5">
-    <h1 class="text-center mb-5">Gallery</h1>
+  <header class="hero">
+    <div class="container">
+      <h1 class="display-4">Welcome to Patrulla Café</h1>
+      <p class="lead">Creating joy with each bite.</p>
+      <a href="menu.html" class="btn btn-warning">View Our Menu</a>
+    </div>
+  </header>
 
-    <div class="row g-4">
+  <section class="container my-5">
+    <div class="row text-center">
       <div class="col-md-4">
-        <img src="images/cafe interior.jpeg" class="gallery-img" alt="Café Interior">
+        <div class="p-4 feature-card rounded">
+          <h2> Freshly Brewed Daily</h2>
+          <p>Our beans are ethically sourced and ground fresh for every cup.</p>
+        </div>
       </div>
       <div class="col-md-4">
-        <img src="images/lounge area.jpeg" class="gallery-img" alt="lounge area">
+        <div class="p-4 feature-card rounded">
+          <h2> Homemade Treats</h2>
+          <p>Pastries, cookies, and cakes made with love by our in-house chef.</p>
+        </div>
       </div>
       <div class="col-md-4">
-        <img src="images/pastry.jpeg" class="gallery-img" alt="Dessert Display">
+        <div class="p-4 feature-card rounded">
+          <h2> We Deliver</h2>
+          <p>Order online and get your favorites delivered to your doorstep.</p>
+        </div>
       </div>
-      <div class="col-md-4">
-        <img src="images/latte.jpeg" class="gallery-img" alt="Latte Art">
-      </div>
-  </main>
+    </div>
+  </section>
 
   <a href="index.html" class="floating-home-button" title="Back to Home">🏠</a>
 
